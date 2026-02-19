@@ -1,125 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-page="home">
 <head>
-  <meta charset="UTF-8" />
-  <title>Aldea – A self-sufficient town / village of the future</title>
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <link rel="stylesheet" href="/assets/css/style.css" />
-  <link rel="stylesheet" href="/assets/css/logo.css" />
-  <link rel="stylesheet" href="/assets/css/lang-dropdown.css" />
-  <link rel="stylesheet" href="/assets/css/social-proof.css" />
-  
-
-  <script>
-    // TODO: wstaw URL do Twojego Apps Script Web App:
-    window.AldeaStatsConfig = { endpoint: "PASTE_YOUR_WEB_APP_URL_HERE" };
-  </script>
-
-  <script defer src="/assets/js/languages.js"></script>
-  <script defer src="/assets/js/nav.js"></script>
-  <script defer src="/assets/js/layout.js"></script>
-  <script defer src="/assets/js/stats-sheets.js"></script>
+  <title>Aldea</title>
+  <link rel="stylesheet" href="/Aldea/assets/css/style.css" />
 </head>
 <body>
-  <div class="page">
-    <div id="site-header"></div>
-
-    <main class="wrapper">
-      <section class="hero" id="projekt">
-        <div class="hero-grid">
-          <div>
-            <div class="hero-kicker"><span class="dot"></span><span>An open project for a self-sufficient community</span></div>
-            <h1 class="hero-title"><span class="accent">Aldea</span> – a living project<br />of a town/village built on cooperation, nature, and technology.</h1>
-            <p class="hero-lead">This site gathers the manifesto, constitution, action plan, and technology catalog for Aldea — a settlement designed to sustain itself, learn, and inspire other communities.</p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="#manifest">Read the manifesto</a>
-              <a class="btn btn-ghost" href="#plan">See the milestone plan</a>
-              <a class="btn" href="/en/dokumentacja.html">Documentation</a>
-            </div>
-          </div>
-          <aside class="hero-card">
-            <div class="hero-card-inner">
-              <div class="hero-card-title">What kind of place is this?</div>
-              <div class="hero-badge-row">
-                <span class="badge-soft">🌱 Regeneration, not just “eco”</span><span class="badge-soft">💡 Openness and sharing</span><span class="badge-soft">🤝 Community over systems</span>
-              </div>
-              <p class="hero-lead">Aldea is not a finished product. It’s a set of principles, tools, and ideas that can be implemented in different places worldwide. What you’re reading is an invitation to discuss and co-create.</p>
-            </div>
-          </aside>
+  <div data-include="/Aldea/components/header.html"></div>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-card">
+        <div class="kicker"><span class="dot"></span><span>Open regenerative settlement project</span></div>
+        <h1>ALDEA</h1>
+        <p class="lead">This language version is a placeholder. The full documentation is currently available in Polish. Help translate: create a PR in GitHub.</p>
+        <div class="actions">
+          <a class="btn primary" href="/Aldea/pl/dokumentacja.html">Open documentation (PL)</a>
+          <a class="btn" href="https://github.com/LukasKmiecik/Aldea" target="_blank" rel="noreferrer">GitHub repository</a>
         </div>
-      </section>
-
-      <section class="section" id="manifest">
-        <div class="section-header">
-          <div>
-            <div class="section-kicker">Manifest</div>
-            <h2 class="section-title">Why does Aldea exist?</h2>
-          </div>
-        </div>
-        <div class="section-grid">
-          <article class="card"><h3>A dignified life over constant rush</h3><p>In Aldea, the goal is not maximizing GDP but quality of life: time for loved ones, healthy food, room for art, rest, growth, experimentation, and the right to fail.</p></article><article class="card"><h3>Self-sufficiency over dependency</h3><p>The settlement aims for high independence in energy, food, and infrastructure — not to isolate, but to cooperate with the world on equal terms.</p></article><article class="card"><h3>Technology in service of people</h3><p>Technology is not meant to replace relationships — it should reduce repetitive, heavy, and boring work so more energy remains for what is truly human.</p></article>
-        </div>
-      </section>
-
-      <section class="section" id="filary">
-        <div class="section-header">
-          <div>
-            <div class="section-kicker">Filary</div>
-            <h2 class="section-title">Areas of technology and practice</h2>
-          </div>
-        </div>
-        <div class="section-grid">
-          <article class="card"><h3>Energy</h3><p>Microgrids, storage, load management, and consumption prioritization — powered by solar, wind, and other locally available sources.</p><ul class="clean"><li>small scale, many sources</li><li>efficiency over raw power</li><li>designed for on-site maintenance</li></ul></article><article class="card"><h3>Water and resource loops</h3><p>Rain capture, purification, greywater reuse, and organic matter cycling. Closed loops where possible.</p></article><article class="card"><h3>Food</h3><p>Forest gardens, greenhouses, aquaponics, and cooperation with local farms — to reduce dependence on external supply chains.</p></article><article class="card"><h3>Buildings and infrastructure</h3><p>Simple, repairable structures, modular buildings, local materials, flexible spaces (work / living / learning / culture).</p></article><article class="card"><h3>Communication and organization</h3><p>Transparent decision tools, open access to information, processes built on trust rather than micromanagement.</p></article><article class="card"><h3>Education and culture</h3><p>Aldea Academy — knowledge exchange across generations, artists, engineers, and makers. Education as daily practice, not only a formal system.</p></article>
-        </div>
-      </section>
-
-      <section class="section" id="plan">
-        <div class="section-header">
-          <div>
-            <div class="section-kicker">Plan działania</div>
-            <h2 class="section-title">Aldea development stages</h2>
-          </div>
-        </div>
-        <div class="section-grid">
-          <article class="card"><h3>Stage 1 – Documentation & community</h3><p>Collecting ideas, refining the constitution, manifesto, and technology catalog. Finding people who resonate with the project and want to contribute.</p></article><article class="card"><h3>Stage 2 – Place & first infrastructure</h3><p>Choosing land, analyzing climate and resources, first modular buildings and critical systems: water, energy, sanitation, access.</p></article><article class="card"><h3>Stage 3 – Growth & replication</h3><p>Expanding the settlement, sharing lessons learned, creating a “starter kit” for future Aldeas in other places.</p></article>
-        </div>
-      </section>
-
-      <section class="section" id="akademia">
-        <div class="section-header">
-          <div>
-            <div class="section-kicker">Akademia Aldea</div>
-            <h2 class="section-title">A village as a university</h2>
-          </div>
-        </div>
-        <p class="hero-lead" style="font-size:.96rem">Aldea Academy imagines the whole town as an open, hands-on university. Instead of separating “learning” from “life”, Aldea treats daily life as a space for experimentation:</p>
-        <ul class="clean">
-          <li>workshops on natural building, energy, gardening</li><li>residencies for artists, researchers, engineers</li><li>documenting failures and successes as open reports</li>
-        </ul>
-      </section>
-
-      <section class="section" id="dolacz">
-        <div class="section-header">
-          <div>
-            <div class="section-kicker">Kontakt</div>
-            <h2 class="section-title">How can you contribute?</h2>
-          </div>
-        </div>
-        <div class="contact-grid">
-          <div class="contact-box">
-            <p>At this stage, Aldea is primarily a <strong>written project</strong> — a set of documents that may become the foundation of a real place. If you want to read, comment, propose changes, or help:</p>
-            <ul class="clean"><li>review the manifesto, constitution, and plans in the repository</li><li>share ideas via GitHub Issues or email</li><li>help translate into more languages</li></ul>
-          </div>
-          <div class="contact-box">
-            <p><strong>E-mail:</strong><br /><strong>aldeaprojekt@gmail.com</strong></p>
-            <p style="margin-top:.4rem">In your message you can briefly include:</p>
-            <ul class="clean"><li>who you are and where you write from</li><li>what resonates with you in Aldea</li><li>how you can realistically support</li></ul>
-          </div>
-        </div>
-      </section>
-    </main>
-    <div id="site-footer"></div>
-  </div>
+      </div>
+    </div>
+  </section>
+  <div data-include="/Aldea/components/footer.html"></div>
+  <script src="/Aldea/assets/js/main.js"></script>
 </body>
 </html>
